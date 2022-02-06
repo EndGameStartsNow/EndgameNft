@@ -3,8 +3,8 @@ import path from "path";
 import fs from "fs";
 import 'dotenv/config'
 
-const readDir = `${basePath}/build/json`; 
 const basePath = process.cwd();
+const readDir = `${basePath}/build/genericJson`; 
 const AUTH = process.env.NFT_PORT_AUTH;
 const TIMEOUT = 1000;
 const allMetadata = [];
