@@ -6,7 +6,7 @@ import 'dotenv/config'
 
 const basePath = process.cwd();
 const AUTH = process.env.NFT_PORT_AUTH;
-const TIMEOUT = 1000; // Milliseconds. Extend this if needed to wait for each upload. 1000 = 1 second.
+const TIMEOUT = 1000;
 
 const allMetadata = [];
 

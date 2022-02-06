@@ -18,8 +18,6 @@ fs.readdirSync(`${buildDir}/json`).forEach((file) => {
 
   jsonFile.name = `${GENERIC_TITLE} #${jsonFile.custom_fields.edition}`;
   jsonFile.description = GENERIC_DESCRIPTION;
-  jsonFile.file_url =
-    "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh";
   delete jsonFile.attributes;
   delete jsonFile.custom_fields.dna;
 

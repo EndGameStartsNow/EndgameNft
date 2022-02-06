@@ -5,10 +5,10 @@ import 'dotenv/config'
 
 const basePath = process.cwd();
 const AUTH = process.env.NFT_PORT_AUTH;
-const CONTRACT_ADDRESS = '0x185e7c3ab6a2e4ebd4a5f5aebf08550d8fa6e857';
+const CONTRACT_ADDRESS = '0x0f27878b31d367d57d69f126d164dc553383ee4c';
 const MINT_TO_ADDRESS = '0xD18d08DbFCf9b280D990e8073D28a947a40DB584';
-const CHAIN = 'rinkeby';
-const TIMEOUT = 1000; // Milliseconds. This a timeout for errors only. If there is an error, it will wait then try again. 5000 = 5 seconds.
+const CHAIN = 'polygon';
+const TIMEOUT = 1000; 
 
 if (!fs.existsSync(path.join(`${basePath}/build`, "/minted"))) {
   fs.mkdirSync(path.join(`${basePath}/build`, "minted"));
